@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #00e5ff;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #00e5ff;
+  background: #000;
+  color: #00e5ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #00e5ff;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #00bcd4;
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 15px;
+  color: #ccc;
+}
+
+a {
+  color: #00e5ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #00e5ff;
+}
+
+/* 🔁 Responsive design using media queries */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}

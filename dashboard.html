@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Microgrid Dashboard</h1>
+    <p id="user-email"></p>
+    <button id="logout">Logout</button>
+
+    <div class="card">
+      <h2>Energy Status</h2>
+      <p>🔋 Available Energy: <span id="my-energy">0 kWh</span></p>
+      <p>🔌 Current Load: <span id="my-load">0 W</span></p>
+    </div>
+
+    <div class="card">
+      <h2>Power Sharing</h2>
+      <div id="request-buttons">
+        <button onclick="sendPowerRequest()">Request Power</button>
+      </div>
+      <div id="incoming-request" style="display:none;">
+        <p><strong>Power Request Received from <span id="request-from"></span>!</strong></p>
+        <button onclick="acceptPowerRequest()">Accept</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Billing</h2>
+      <p>⚡ Shared Energy: <span id="shared-energy">0 kWh</span></p>
+      <p>💰 Amount Due: ₹<span id="bill-amount">0.00</span></p>
+      <button onclick="payBill()">Pay Bill</button>
+    </div>
+
+    <div id="notification"></div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+  
+
+</body>
+</html>
