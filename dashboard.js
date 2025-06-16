@@ -4,13 +4,13 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, collection, addDoc, onSnapshot, query, where, updateDoc, doc, getDocs } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD1KGJBmLmQmoCvk0hofCkGmcl5AbLCquA",
-  authDomain: "microgrid-project-a6bc8.firebaseapp.com",
-  projectId: "microgrid-project-a6bc8",
-  storageBucket: "microgrid-project-a6bc8.appspot.com",
-  messagingSenderId: "816164204779",
-  appId: "1:816164204779:web:872ed1baa38a41688b8eae",
-  measurementId: "G-NKHX22ETP2"
+ apiKey: "AIzaSyDqY_n0HuKyIsRhj99flbORVn3CGuMg2DQ",
+  authDomain: "microgrid-32d40.firebaseapp.com",
+  projectId: "microgrid-32d40",
+  storageBucket: "microgrid-32d40.firebasestorage.app",
+  messagingSenderId: "253327439205",
+  appId: "1:253327439205:web:e3e54b3f8bd872384d1d8c",
+  measurementId: "G-2541NH4CGE"
 };
 
 const app = initializeApp(firebaseConfig);
